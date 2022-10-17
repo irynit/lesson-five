@@ -11,8 +11,46 @@
 
 <body>
   <div class="wrapper">
+    <!-- Секция Menu -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a class="header__menu-title header__menu-title-active" href="#">Home</a></li>
+            <li><a class="header__menu-title" href="#aboutme">About me</a></li>
+            <li><a class="header__menu-title" href="#skills">Skills</a></li>
+            <li><a class="header__menu-title" href="#portfolio">Portfolio</a></li>
+            <li><a class="header__menu-title" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--секция first screen-->
+    <section class="denis">
+      <div class="container denis__container">
+        <h1 class="denis__title">Denis Novik</h1>
+        <div class="denis__img">
+          <img src="./img/photo-denis.png" alt="photo">
+        </div>
+      </div>
+    </section>
+
+    <!--секция About me-->
+    <section class="about" id="aboutme">
+      <div class="container about__container">
+        <h2 class="about__title">About me</h2>
+        <div class="about__text-container">
+          <p class="about__text">Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything
+            connected with it.</p>
+          <p class="about__text">I'm studying at courses "Web and mobile design <br>interfaces" in IT-Academy.</p>
+          <p class="about__text">Ready to implement excellent projects<br> with wonderful people.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Секция Skills -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="container skills__container">
         <h2 class="skills__title">Skills</h2>
         <p class="skills__text">I work in such programs as</p>
@@ -58,7 +96,7 @@
           <!-- Карточка Figma -->
           <div class="skills__cart">
             <div class="skills__cart-img">
-              <img src="./img/figma.png" alt="symbol figma" style="width: 53px;" width="80">
+              <img src="./img/figma-fixed.png" alt="symbol figma">
             </div>
 
             <h4 class="skills__cart-title" style="margin-bottom: 80px;">Figma</h4>
@@ -71,7 +109,7 @@
     </section>
 
     <!-- Секция Portfolio -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container portfolio__container">
         <h2 class="portfolio__title">Portfolio</h2>
         <div class="portfolio__img">
@@ -90,9 +128,27 @@
         <p class="portfolio__text">Braun Landing Page - Concept</p>
       </div>
     </section>
-    <footer>
-      <div style="height: 100px; background-color: #ffffff;">
-        dasdasdasdas</div>
+
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <h2 class="footer__title">Contacts</h2>
+        <p class="footer__text">Want to know more or just chat?<br>
+          You are welcome!</p>
+        <div class="footer__link-container">
+          <a href="mailto:irynachmel@gmail.com" class="footer__link-container-btn">Send message</a>
+          <div class="footer__link-container-icon">
+            <a href="" target="_blank"><img src="./img/linkedin.svg" alt="linkedin"
+                class="footer__link-container-icon-img" width="100"></a>
+            <a href="" target="_blank"><img src="./img/instagram.svg" alt="instagram"
+                class="footer__link-container-icon-img" width="100"></a>
+            <a href="" target="_blank"><img src="./img/behance.svg" alt="behance"
+                class="footer__link-container-icon-img" width="100"></a>
+            <a href="" target="_blank"><img src="./img/dribbble.svg" alt="dribbble"
+                class="footer__link-container-icon-img" width="100"></a>
+          </div>
+        </div>
+        <p class="footer__text-footer">Like me on<br>
+          LinkedIn, Instagram, Behance, <br>Dribble</p>
     </footer>
   </div>
 </body>
